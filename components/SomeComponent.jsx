@@ -1,3 +1,7 @@
+/**
+ * - Use SomeComponent to do some stuff
+ */
+
 import React from 'react'
 import PropTypes from 'prop-types'
 

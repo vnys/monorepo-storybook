@@ -1,3 +1,7 @@
+/**
+ * - Use OtherComponent to do other stuff
+ */
+
 import React from 'react'
 import PropTypes from 'prop-types'
 

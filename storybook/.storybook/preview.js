@@ -1,4 +1,9 @@
-import { addDecorator } from '@storybook/react'
-import { withInfo } from '@storybook/addon-info'
+import { addParameters } from '@storybook/react'
+import { DocsPage, DocsContainer } from '@storybook/addon-docs/blocks'
 
-addDecorator(withInfo)
+addParameters({
+  docs: {
+    container: DocsContainer,
+    page: DocsPage,
+  },
+})
