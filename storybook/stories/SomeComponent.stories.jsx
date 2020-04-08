@@ -2,14 +2,22 @@ import React from 'react'
 import { SomeComponent } from '../../components/SomeComponent'
 
 export default {
-  title: 'SomeComponent',
+  title: 'Design System|SomeComponent',
 
   parameters: {
     component: SomeComponent,
-    componentSubTitle: 'Display text in some component',
+    componentSubtitle: 'Display text in some component',
   },
 }
 
 export const SomeStory = () => (
   <SomeComponent color="teal">I am some component</SomeComponent>
 )
+
+SomeStory.story = {
+  parameters: {
+    docs: {
+      storyDescription: 'Add some text and specify a colour',
+    },
+  },
+}

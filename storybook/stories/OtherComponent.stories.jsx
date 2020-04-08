@@ -2,14 +2,22 @@ import React from 'react'
 import { OtherComponent } from '../components/OtherComponent'
 
 export default {
-  title: 'OtherComponent',
+  title: 'Design System|OtherComponent',
 
   parameters: {
     component: OtherComponent,
-    componentSubTitle: 'Display text in some component',
+    componentSubtitle: 'Display text in some other component',
   },
 }
 
 export const OtherStory = () => (
   <OtherComponent color="maroon">I am some other component</OtherComponent>
 )
+
+OtherStory.story = {
+  parameters: {
+    docs: {
+      storyDescription: 'Add some text and specify a colour',
+    },
+  },
+}
